@@ -1,0 +1,22 @@
+name: Feature request
+description: Suggest an instruction, board, device, or capability
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do
+      description: Describe the goal, not the solution. What are you building?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would help
+    validations:
+      required: true
+  - type: input
+    id: prior-art
+    attributes:
+      label: Prior art
+      description: If RSLogix, Studio 5000, or another IDE does this, say how.

@@ -1,0 +1,55 @@
+name: Bug report
+description: Something in LadderIDE behaves incorrectly
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For security vulnerabilities, email support@praxous.dev instead - see SECURITY.md.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: LadderIDE version
+      description: Help > About
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - Sim
+        - Pro
+    validations:
+      required: true
+  - type: input
+    id: board
+    attributes:
+      label: Board
+      description: If hardware is involved - e.g. Nano Every, Mega 2560, Nucleo F446RE.
+  - type: input
+    id: os
+    attributes:
+      label: Windows version
+  - type: textarea
+    id: project-file
+    attributes:
+      label: Project file
+      description: Attach the .ldp if you can share it. It makes most bugs reproducible immediately.
